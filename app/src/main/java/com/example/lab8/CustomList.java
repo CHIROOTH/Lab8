@@ -85,12 +85,12 @@ public class CustomList extends ArrayAdapter<City> {
         cities.remove(city);
     }
 
-//    /**
-//     * This returns the number of cities in the list
-//     * @return
-//     * Return the number of cities in the list
-//     */
-//    public int countCities() {
+    /**
+     * This returns the number of cities in the list
+     * @return
+     * Return the number of cities in the list
+     */
+    public int countCities() {
 //        return cities.size();
-//    }
+    }
 }
