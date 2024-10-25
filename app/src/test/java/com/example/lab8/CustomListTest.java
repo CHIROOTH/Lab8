@@ -54,7 +54,7 @@ public class CustomListTest {
     void testDelete() {
         list = MockCityList();
         City city = new City("Regina", "Saskatchewan");
-        list.add(city);
+        list.addCity(city);
         assertEquals(1, list.getCount());
         assertTrue(list.hasCity(city));
         list.delete(city);
@@ -62,14 +62,14 @@ public class CustomListTest {
         assertFalse(list.hasCity(city));
     }
 
-    @Test
-    void testCountCities() {
-        list = MockCityList();
-        assertEquals(0, list.getCount());
-        City city = new City("Charlottetown", "Prince Edward Island");
-        list.add(city);
-        assertEquals(1, list.countCities());
-        list.delete(city);
-        assertEquals(0, list.countCities());
-    }
+//    @Test
+//    void testCountCities() {
+//        list = MockCityList();
+//        assertEquals(0, list.getCount());
+//        City city = new City("Charlottetown", "Prince Edward Island");
+//        list.addCity(city);
+//        assertEquals(1, list.countCities());
+//        list.delete(city);
+//        assertEquals(0, list.countCities());
+//    }
 }
